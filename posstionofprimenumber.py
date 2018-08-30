@@ -1,7 +1,7 @@
 #find the posstion of prime number
 i = 1
 q = 0
-posstion = input("enter number")
+posstion = input("enter posstion of prime you want")
 while True:
 	i +=1
 	s = 0
