@@ -25,9 +25,9 @@ winer_price = [1000,2000,3000,5000,10000,20000,40000,80000,160000,320000,640000,
 answers_list = []
 sum = 0
 for i in range(len(questions)):
-      print (questions[i] ,"-", len(questions[i]))
-      print ("",first_options[i],"\n",second_options[i],"\n",third_options[i],"\n",fourth_options[i])
-      ans = int(input("enter correct answers "))
+      print("\033[96m{}\033[00m" .format(questions[i] ,"-", len(questions[i])))
+      print("\033[34m{}\033[00m".format(first_options[i]+"\n"+second_options[i]+"\n"+third_options[i]+"\n"+fourth_options[i]))
+      ans = int(input("\033[35;1m{}\033[00m".format("enter correct answers"))) 
       answers_list.append(ans)
       if ans_key[i] == ans:
         correct_answers = correct_answers + 1
@@ -42,4 +42,3 @@ for i in range(len(questions)):
       else:
 	      print ("\033[91m{}\033[00m".format("Aap KBC haar chuke hai " + str(sum) + "  winer price aapko mila hai"))
 	      break
-
